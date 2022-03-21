@@ -8,8 +8,8 @@
 </head>
 <body>
 
-    <h1>一堆h标签</h1>
-    <h2>一堆h标签</h2>
+    <h1> <a name="h1">一堆h标签</a> </h1>
+    <h2 id="h2">一堆h标签</h2>
     <h3>一堆h标签</h3>
     <h4>一堆h标签</h4>
     <h5>一堆h标签</h5>
@@ -21,9 +21,27 @@
     <p>演艺事业外，他还涉足商业、设计等领域。2007年成立杰威尔有限公司 [16]  。2011年担任华硕笔电设计师，并入股香港文化传信集团</p>
     <p>周杰伦热心公益慈善，多次向中国内地灾区捐款捐物。2008年捐款援建希望小学 [19]  。2014年担任中国禁毒宣传形象大使</p>
 <br>
-    <img src="images/hinata.jpg" alt="日向" title="日向雏田" width="500px"  height="500px" style="border: 5px dashed #F6E7D8;">
+    <a name="img标签"></a>
+    <p>
+        <img src="images/hinata.jpg" alt="日向" title="日向雏田" width="500px"  height="500px" style="border: 5px dashed #F6E7D8;">
+    </p>
     <!-- 同时设置width和height属性会导致变形，设置一个就好，等比例缩放 -->
-    <img src="../02笔记/image/笔记/相对路径.png" alt="相对路径">
+    <p>
+        <img src="../02笔记/image/笔记/相对路径.png" alt="相对路径">
+    </p>
+    <!-- 网络路径 -->
+    <p>
+        <img src="https://bkimg.cdn.bcebos.com/pic/3ac79f3df8dcd100baa1df14eac75010b912c8fc81f8?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg" alt="周杰伦">
+    </p>
+<br>
+    <a href="https://www.baidu.com" title="baidu">跳转到百度</a>
+    <a href="01html骨架.html">跳转到01html骨架</a>
+    <a href="01html骨架.html" target="_blank">跳转到01html骨架</a>
+    <!-- 跳转 -->
+    <a href="#img标签">img标签</a>
+    <a href="#h1">h1标签</a>
+    <a href="#h2">h2标签</a>
+<br>
 
 </body>
 </html>
