@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <!-- 三行四列 -->
+    <!-- border边框，css合并表格 -->
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <!-- th表头 -->
+            <th>第1列</th>
+            <th>第2列</th>
+            <th>第3列</th>
+            <th>第4列</th>
+        </tr>
+        <tr>
+            <td>第1行，第1列</td>
+            <td>第1行，第2列</td>
+            <td>第1行，第3列</td>
+            <td>第1行，第4列</td>
+        </tr>
+        <tr>
+            <td>第2行，第1列</td>
+            <td>第2行，第2列</td>
+            <td>第2行，第3列</td>
+            <td>第2行，第4列</td>
+        </tr>
+        <tr>
+            <td>第3行，第1列</td>
+            <td>第3行，第2列</td>
+            <td>第3行，第3列</td>
+            <td>第3行，第4列</td>
+        </tr>
+    </table>
+    </div>
+<br>
+    <div>
+    <!-- 跨行跨列 -->
+    <style>
+        table{
+
+        }
+        td{
+            width: 80px;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+            <td colspan="3">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td rowspan="2">9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11</td>
+            <td>12</td>
+            <td colspan="2">13</td>
+            <td rowspan="2">14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td colspan="2">18</td>
+        </tr>
+    </table>
+    </div>
+<br>
+    <div>
+    <!-- 表格分区 -->
+    <table border="1" style="border-collapse: collapse;">
+    <!-- 主题 -->
+    <caption>各地资产投资情况</caption>
+    <!-- 表头 -->
+    <thead>
+        <tr>
+            <th rowspan="2">地区</th>
+            <th colspan="2">按总量分</th>
+            <th colspan="2">按比重分</th>
+        </tr>
+        <tr>
+            <th>自年初累计（亿元）</th>
+            <th>去年同期增长（%）</th>
+            <th>自年初累计（%）</th>
+            <th>去年同期（%）</th>
+        </tr>
+    </thead>
+    <!-- 主体 -->
+    <tbody>
+        <tr>
+            <td>全国</td>
+            <td>13245</td>
+            <td>9.8</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>全国</td>
+            <td>13245</td>
+            <td>9.8</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>全国</td>
+            <td>13245</td>
+            <td>9.8</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>全国</td>
+            <td>13245</td>
+            <td>9.8</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>全国</td>
+            <td>13245</td>
+            <td>9.8</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+
+</body>
+</html>
